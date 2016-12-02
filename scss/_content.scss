@@ -79,9 +79,9 @@
 
 .hp-recent-news{
 	padding-right: 1.5em;
-	font-family: $font-subheading;
 
 	.news-header{
+    font-family: $font-subheading;
 		@include font-size(30);
 		background: $color-subheading;
 		color: $color-background-light;
@@ -128,6 +128,7 @@
 
 	.excerpt{
 		@include font-size(16);
+    font-family: $font-base;
 		font-weight: 400;
 
 		a{

@@ -19,6 +19,8 @@ body {
 	font-family: $font-base;
 	@include font-size($base-size);
 	line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -29,11 +31,11 @@ h5,
 h6 {
 	clear: both;
 	margin: ($base-size * 1.5) + px 0 ;
-	
+
 	a{
 		color: inherit;
 		text-decoration: none;
-		
+
 		&:hover,
 		&:active,
 		&:focus{
@@ -276,11 +278,11 @@ textarea {
 	padding: 3px;
 	margin: 0.25em 0 0.5em;
 	width: 100%;
-	
+
 	@include input-placeholder{
 		color: lighten($color-text-dark, 15%);
 	}
-	
+
 	&:hover,
 	&:active,
 	&:focus{
@@ -302,10 +304,10 @@ textarea {
 --------------------------------------------------------------*/
 a {
 	color: $color-link;
-	font-weight: 700;
+	font-weight: 400;
 	text-decoration: underline;
 	@include transition(color 0.2s ease);
-	
+
 	img{
 		@include opacity(1);
 		@include transition(opacity 0.2s ease);
@@ -316,11 +318,11 @@ a:hover,
 a:focus,
 a:active {
 	color: $color-text-dark;
-	
+
 	img{
 		@include opacity(0.8);
 	}
-	
+
 }
 
 a:focus {
@@ -445,8 +447,8 @@ a.button-1,
 	padding: 0.75em 2.5em;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;	
-	
+	text-transform: uppercase;
+
 	&:hover,
 	&:active,
 	&:focus{
@@ -455,18 +457,18 @@ a.button-1,
 }
 
 // Responsive embeds
-.embed-container { 
-	position: relative; 
+.embed-container {
+	position: relative;
 	padding-bottom: 56.25%;
 	height: 0;
 	overflow: hidden;
 	max-width: 100%;
 	height: auto;
-} 
+}
 
 .embed-container iframe,
 .embed-container object,
-.embed-container embed { 
+.embed-container embed {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -496,12 +498,12 @@ a.button-1,
 .dark-theme{
 	background: $color-background-dark;
 	color: $color-text-light;
-	
+
 	h1,
 	h2{
 		color: $color-text-light;
 	}
-	
+
 	a{
 		&:hover,
 		&:active,
