@@ -1225,7 +1225,7 @@ object {
 }
 
 .site-content {
-  margin-top: 84px;
+  margin-top: 72px;
   background-image: url(img/GAtourtextureA.png);
 }
 
@@ -2055,14 +2055,11 @@ h1.album {
 # Newsletter Widget (Sidebar / Store)
 --------------------------------------------------------------*/
 .newsletter {
-  background-image: url("img/sidebar-newsletter-bkgd.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
+  background-image: url(img/sidebar-newsletter-bkgd.jpg);
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
 }
 .newsletter form {
   padding: 0 0.5em 1em;
