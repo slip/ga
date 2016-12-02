@@ -111,11 +111,8 @@
 --------------------------------------------------------------*/
 
 .newsletter{
-	background-image: url('img/sidebar-newsletter-bkgd.jpg');
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position: center center;
-	@include background-size(cover);
+	background-image: url(img/sidebar-newsletter-bkgd.jpg);
+  @include background-size(contain);
 
 	form{
 		padding: 0 0.5em 1em;
