@@ -1230,6 +1230,7 @@ object {
 
 .site-header {
   background-color: #354641;
+  background-image: url("/wp-content/themes/resolutionathens/img/tile-header.png");
   position: fixed;
   top: 0;
   left: 0;
