@@ -16,7 +16,7 @@ get_header(); ?>
 		if ( have_posts() ) :
 		?>
 			<header>
-				<h1 class="page-title hidden-text"><?php single_post_title(); ?></h1>
+				<h1 class="page-title hidden-text">The Band</h1>
 			</header>
 			
 			<div class="card-grid card-grid-three">

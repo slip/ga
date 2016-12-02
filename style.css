@@ -2604,6 +2604,12 @@ h1.album {
   }
 }
 @media screen and (max-width: 680px) {
+  .hidden-text {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .card-grid-two {
     display: block;
   }
@@ -2611,6 +2617,8 @@ h1.album {
   .card-grid-two .card-container {
     width: 100%;
     display: block;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .hp-hero .hp-newsletter {
@@ -2648,6 +2656,7 @@ h1.album {
   .col-one-fourth,
   .col-three-fourth {
     width: 100%;
+    margin: 0 auto;
   }
 
   .gutter,
@@ -2662,6 +2671,8 @@ h1.album {
   .card-grid-three .card-container {
     display: block;
     width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .blog .card,
@@ -2681,6 +2692,18 @@ h1.album {
     *vertical-align: auto;
     *zoom: 1;
     *display: inline;
+    margin-bottom: 1.5em;
+  }
+  .page-template-page-store .newsletter {
+    margin-bottom: 1.5em;
+  }
+
+  .mobile-container-full {
+    max-width: 100%;
+  }
+
+  .home .page-content {
+    margin: 0;
   }
 }
 @media screen and (max-width: 480px) {

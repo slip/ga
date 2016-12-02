@@ -423,6 +423,12 @@
 
 @media screen and (max-width: 680px){
 	
+	.hidden-text{
+		max-width: 92%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 	.card-grid-two{
 		display: block;
 		
@@ -430,6 +436,8 @@
 		.card-container{
 			width: 100%;
 			display: block;
+			margin: 0 auto;
+			padding: 0;
 		}
 	}
 	
@@ -479,6 +487,7 @@
 	.col-one-fourth,
 	.col-three-fourth{
 		width: 100%;
+		margin: 0 auto;
 	}
 	
 	.gutter,
@@ -493,6 +502,8 @@
 		.card-container{
 			display: block;
 			width: 100%;
+			margin: 0 auto;
+			padding: 0;
 		}
 	}
 	
@@ -516,7 +527,23 @@
 		.banner{
 			.button{
 				@include inline-block;
+				margin-bottom: 1.5em;
 			}
+		}
+		
+		.newsletter{
+			margin-bottom: 1.5em;
+		}
+	}
+	
+	.mobile-container-full{
+		max-width: 100%;
+	}
+	
+	.home{
+		
+		.page-content{
+			margin: 0;
 		}
 	}
 }
