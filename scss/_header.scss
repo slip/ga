@@ -1,0 +1,94 @@
+.site-content{
+	margin-top: 84px;
+}
+
+.site-header{
+	background-color: $color-temp-header;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	visibility: visible;
+	@include opacity(1);
+	@include transition(all 0.5s ease);
+	@include box-shadow(1px 1px 10px rgba(black, 0.2));
+}
+
+.site-header.hidden{
+	visibility: hidden;
+	@include opacity(0);
+}
+
+.site-branding{
+	float: left;
+}
+
+.site-title{
+	margin: 0 0 -0.75em;
+	line-height: 0.8;
+	@include font-size($base-size);
+	
+	img{
+		width: 224px;
+	}
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+
+.main-navigation {
+	font-family: $font-legible;
+	float: left;
+	margin: 1.75em 0 0.5em 1.75em;
+
+	ul {
+		display: block;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		text-align: right;
+	}
+	
+	a {
+		@include font-size(20);
+		color: $color-nav-link;
+		display: block;
+		font-weight: 700;
+		position: relative;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	
+	li {
+		@include inline-block;
+		padding: 0 0 0 1.5em;
+		margin: 0;
+		
+		&:hover > a,
+		&:active > a,
+		&:focus > a{
+			color: $color-link;
+		}	
+	}
+	
+	ul ul {
+		display: none;
+	}
+	
+	ul ul ul {
+		display: none;
+	}
+	
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a{
+		color: $color-link;
+	}
+}
+
+.menu-toggle{
+	display: none;
+}

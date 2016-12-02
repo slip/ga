@@ -1,0 +1,39 @@
+.site-footer{
+	background-color: $color-temp-header;
+	color: $color-text-light;
+	
+	.row{
+		align-items: center;
+	}
+}
+
+.legal{
+	@include font-size(12);
+	font-family: $font-subheading;
+	float: left;
+	max-width: 322px;	
+}
+
+.footer-logo{
+	text-align: center;
+	img{
+		max-width: 300px;
+	}
+}
+
+.footer-social-icons{
+	text-align: right;
+}
+
+.social-icon{
+	margin: 0.75em;
+	fill: $color-text-light;
+	@include opacity(0.8);
+	
+	
+	&:hover,
+	&:active,
+	&:focus{
+		fill: $color-link;
+	}
+}
