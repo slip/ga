@@ -1,12 +1,12 @@
 {
-  "name": "lightmarkmedia",
+  "name": "resolutionathens",
   "version": "1.0.0",
-  "description": "Custom WP theme by Lightmark Media",
+  "description": "Custom WP theme by Resolution",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Lightmark Media",
+  "author": "Resolution",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.0.1",
