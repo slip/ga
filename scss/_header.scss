@@ -4,6 +4,7 @@
 
 .site-header{
 	background-color: $color-temp-header;
+  background-image: url('/wp-content/themes/resolutionathens/img/tile-header.png');
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -28,7 +29,7 @@
 	margin: 0 0 -0.75em;
 	line-height: 0.8;
 	@include font-size($base-size);
-	
+
 	img{
 		width: 224px;
 	}
@@ -50,7 +51,7 @@
 		padding-left: 0;
 		text-align: right;
 	}
-	
+
 	a {
 		@include font-size(20);
 		color: $color-nav-link;
@@ -60,27 +61,27 @@
 		text-decoration: none;
 		text-transform: uppercase;
 	}
-	
+
 	li {
 		@include inline-block;
 		padding: 0 0 0 1.5em;
 		margin: 0;
-		
+
 		&:hover > a,
 		&:active > a,
 		&:focus > a{
 			color: $color-link;
-		}	
+		}
 	}
-	
+
 	ul ul {
 		display: none;
 	}
-	
+
 	ul ul ul {
 		display: none;
 	}
-	
+
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
