@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-<div class="md-container clear">
+<div class="md-container mobile-container-full clear">
 	<main id="main" class="site-main" role="main">
 
 		<?php

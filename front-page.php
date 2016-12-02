@@ -36,7 +36,7 @@ get_header(); ?>
 		</div>
 		
 		<div class="page-content">
-			<div class="lg-container">
+			<div class="lg-container mobile-container-full">
 				<div class="row">
 					<div class="col-one-third">
 						<?php get_template_part('template-parts/widget', 'tour'); ?>
