@@ -14,6 +14,12 @@
 	font-family: $font-subheading;
 	float: left;
 	max-width: 322px;
+	
+	a{
+		color: $color-text-light;
+		font-weight: 400;
+		text-decoration: none;
+	}	
 }
 
 .footer-logo{

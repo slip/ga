@@ -2228,6 +2228,11 @@ h1.album {
   float: left;
   max-width: 322px;
 }
+.legal a {
+  color: #E8E2D6;
+  font-weight: 400;
+  text-decoration: none;
+}
 
 .footer-logo {
   text-align: center;
