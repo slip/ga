@@ -1,6 +1,8 @@
 .site-footer{
 	background-color: $color-temp-header;
 	color: $color-text-light;
+  background-image: url(img/tile-wood-115h.png);
+  background-blend-mode: multiply;
 	
 	.row{
 		align-items: center;
@@ -35,8 +37,8 @@
 	margin: 0.75em;
 	fill: $color-text-light;
 	@include opacity(0.8);
-	
-	
+
+
 	&:hover,
 	&:active,
 	&:focus{

@@ -912,7 +912,7 @@ a.button-1:hover, .page-template-page-store a.button:hover, a.button-1:active, .
 .dark-theme, .blog,
 .archive,
 .search {
-  background: #525750;
+  background: #686C58;
   color: #E8E2D6;
 }
 .dark-theme h1, .blog h1,
@@ -1226,11 +1226,16 @@ object {
 
 .site-content {
   margin-top: 84px;
+  background-image: url(img/GAtourtextureA.png);
 }
 
 .site-header {
   background-color: #354641;
   background-image: url("/wp-content/themes/resolutionathens/img/tile-header.png");
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
   position: fixed;
   top: 0;
   left: 0;
@@ -1341,6 +1346,12 @@ object {
 
 .hp-newsletter {
   background: #354641;
+  background-image: url("img/tile-wood-115h.png");
+  background-blend-mode: multiply;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1404,15 +1415,19 @@ object {
   background: #6D9B8D;
   color: #FDF1D8;
   padding: 0.25em 0.5em;
+  background-image: url(img/tile-wood-115h.png);
+  background-blend-mode: multiply;
 }
 .hp-recent-news .news {
   padding: 0.8em 1em;
 }
 .hp-recent-news .news:nth-of-type(odd) {
   background: #8bb0a5;
+  background-image: url(img/GAnewstextureA.png);
 }
 .hp-recent-news .news:nth-of-type(even) {
   background: #FDF1D8;
+  background-image: url(img/GAnewstextureB.png);
 }
 .hp-recent-news .text {
   float: left;
@@ -1512,6 +1527,7 @@ object {
 .card-grid article:nth-of-type(4n+1) .featured-image,
 .card-grid .card-container:nth-of-type(4n+1) .featured-image {
   background: #879158;
+  background-image: url(img/GAnewstextureA.png);
 }
 .card-grid article:nth-of-type(4n+2) .card,
 .card-grid .card-container:nth-of-type(4n+2) .card {
@@ -1520,6 +1536,7 @@ object {
 .card-grid article:nth-of-type(4n+2) .featured-image,
 .card-grid .card-container:nth-of-type(4n+2) .featured-image {
   background: #ffc576;
+  background-image: url(img/GAnewstextureB.png);
 }
 .card-grid article:nth-of-type(4n+3) .card,
 .card-grid .card-container:nth-of-type(4n+3) .card {
@@ -1528,6 +1545,7 @@ object {
 .card-grid article:nth-of-type(4n+3) .featured-image,
 .card-grid .card-container:nth-of-type(4n+3) .featured-image {
   background: #729489;
+  background-image: url(img/GAnewstextureA.png);
 }
 .card-grid article:nth-of-type(4n+4) .card,
 .card-grid .card-container:nth-of-type(4n+4) .card {
@@ -1536,6 +1554,7 @@ object {
 .card-grid article:nth-of-type(4n+4) .featured-image,
 .card-grid .card-container:nth-of-type(4n+4) .featured-image {
   background: #f98552;
+  background-image: url(img/GAnewstextureB.png);
 }
 .card-grid .card {
   display: block;
@@ -1975,6 +1994,8 @@ h1.album {
   font-size: 1.66667rem;
   background: #43312A;
   color: #FDF1D8;
+  background-image: url(img/tile-wood-115h.png);
+  background-blend-mode: multiply;
   font-family: "Roboto", sans-serif;
   padding: 0.25em 0.5em;
 }
@@ -2193,6 +2214,8 @@ h1.album {
 .site-footer {
   background-color: #354641;
   color: #E8E2D6;
+  background-image: url(img/tile-wood-115h.png);
+  background-blend-mode: multiply;
 }
 .site-footer .row {
   align-items: center;
