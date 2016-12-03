@@ -1,12 +1,12 @@
 .site-content{
 	margin-top: 72px;
-  background-image: url(img/GAtourtextureA.png);
+	background-image: url(img/GAtourtextureA.png);
 }
 
 .site-header{
-	background-color: $color-temp-header;
-  background-image: url(img/tile-header.png);
-  @include background-size(contain);
+	background-color: $color-header;
+	background-image: url(img/tile-header.png);
+	@include background-size(contain);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -59,7 +59,7 @@
 		color: $color-nav-link;
 		display: block;
 		font-weight: 700;
-    letter-spacing: 1px;
+		letter-spacing: 1px;
 		position: relative;
 		text-decoration: none;
 		text-transform: uppercase;
