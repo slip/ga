@@ -4,7 +4,7 @@
 }
 
 .site-header{
-	background-color: $color-temp-header;
+	background-color: $color-header;
   background-image: url('/wp-content/themes/resolutionathens/img/tile-header.png');
   @include background-size(contain);
 	position: fixed;

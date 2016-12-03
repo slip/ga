@@ -21,7 +21,6 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 /*-- Colors --*/
-/* TEMPORARY */
 /*-- Fonts --*/
 /*-- Font Sizing --*/
 /*-- Compass --*/
@@ -2432,20 +2431,38 @@ h1.album {
   .js .main-navigation ul {
     text-align: center;
     margin: 1.5em 0;
-    height: 100vh;
+    height: calc(100vh - 100px);
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
   }
   .js .main-navigation .primary-menu-ul.closed {
     display: none;
   }
   .js .main-navigation li {
-    display: list-item;
+    display: block;
     padding: 0;
-    margin: 0.5em 0;
+    margin: 0;
   }
   .js .main-navigation a {
-    display: inline;
-    font-size: 24px;
-    font-size: 1.33333rem;
+    font-size: 16px;
+    font-size: 0.88889rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    padding: 0.5em 0;
   }
   .js .main-navigation a:after {
     display: none;

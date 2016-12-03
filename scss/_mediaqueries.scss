@@ -204,7 +204,10 @@
 			ul{
 				text-align: center;	
 				margin: 1.5em 0;
-				height: 100vh;
+				height: calc(100vh - 100px);
+				@include display-flex;
+				@include flex-direction(column);
+				@include justify-content(space-around);
 			}
 			
 			.primary-menu-ul.closed{
@@ -212,15 +215,18 @@
 			}
 						
 			li{
-				display: list-item;
+				display: block;
 				padding: 0;
-				margin: 0.5em 0;
-			}
+				margin: 0;
+				}
 					
 			a{
-				display: inline;
-				@include font-size(24);
-				
+				@include font-size(16);
+				font-family: $font-subheading;
+				font-weight: 400;
+				letter-spacing: 0.4em;
+				padding: 0.5em 0;
+								
 				&:after{
 					display: none;
 				}
