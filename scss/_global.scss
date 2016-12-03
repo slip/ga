@@ -15,12 +15,12 @@ $color-recent-news: #CAE8E0; // light teal
 $color-header: #354641; // dark green
 
 /*-- Fonts --*/
-$font-base: 'Adele PE', serif;
-$font-legible: 'Open Sans Condensed', sans-serif;
-$font-subheading: 'Roboto', sans-serif;
+$font-base: 'Roboto', sans-serif;
+$font-legible: 'Roboto Condensed', sans-serif;
+$font-subheading: 'Merriweather', serif;
 
 /*-- Font Sizing --*/
-$base-size: 18;
+$base-size: 16;
 
 @function calculateRem($size) {
   $remSize: $size / $base-size;
