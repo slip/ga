@@ -6,7 +6,8 @@
 .site-header{
 	background-color: $color-header;
 	background-image: url(img/tile-header.png);
-	@include background-size(contain);
+	background-repeat: repeat-x;
+	@include background-size(auto 72px);	
 	position: fixed;
 	top: 0;
 	left: 0;

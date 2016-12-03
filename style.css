@@ -1233,10 +1233,11 @@ object {
 .site-header {
   background-color: #354641;
   background-image: url(img/tile-header.png);
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  -webkit-background-size: contain;
-  background-size: contain;
+  background-repeat: repeat-x;
+  -moz-background-size: auto 72px;
+  -o-background-size: auto 72px;
+  -webkit-background-size: auto 72px;
+  background-size: auto 72px;
   position: fixed;
   top: 0;
   left: 0;
