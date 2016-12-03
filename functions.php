@@ -161,7 +161,7 @@ if( function_exists('acf_add_options_page') ) {
 function resolutionathens_scripts() {
 	wp_enqueue_style( 'resolutionathens-style', get_stylesheet_uri() );
 
-	wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,500|Merriweather:300,400');
+	wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700|Merriweather:300,400');
 
 	wp_enqueue_script('custom-head', get_template_directory_uri() . '/js/custom-head.min.js', array(), false, false);
 	wp_enqueue_script('custom-body', get_template_directory_uri() . '/js/custom-body.min.js', array('jquery'), false, true);
