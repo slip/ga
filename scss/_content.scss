@@ -92,6 +92,8 @@
 
 	.news{
 		padding: 0.8em 1em;
+		position: relative;
+		min-height: 150px;
 
 		&:nth-of-type(odd){
 			background: lighten($color-subheading, 10%);
@@ -141,6 +143,9 @@
 		padding-top: 0.5em;
 		text-align: right;
 		width: 120px;
+		position: absolute;
+		bottom: 1.5em;
+		right: 1em;
 	}
 
 	p{
@@ -485,10 +490,10 @@ h1.album{
 	}
 	
 	li:nth-of-type(odd){
-		@include background-image(linear-gradient(to right, $color-tracklist-dark, $color-tracklist-light));
+		@include background-image(linear-gradient(to-right, $color-tracklist-dark, $color-tracklist-light));
 	}
 	li:nth-of-type(even){
-		@include background-image(linear-gradient(to right, $color-tracklist-medium, $color-tracklist-light));
+		@include background-image(linear-gradient(to-right, $color-tracklist-medium, $color-tracklist-light));
 	}
 }
 
