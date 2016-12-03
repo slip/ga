@@ -558,16 +558,8 @@
 	
 	.hp-recent-news{
 		
-		.featured-image{
-			float: none;
-			padding: 0.5em 0;
-			text-align: left;
-			width: 100%;
-		}
-		
-		.text{
-			float: none;
-			width: 100%;
+		.excerpt{
+			display: none;
 		}
 	}
 }
