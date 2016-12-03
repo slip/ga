@@ -485,10 +485,10 @@ h1.album{
 	}
 	
 	li:nth-of-type(odd){
-		@include background-image(linear-gradient(to-right, $color-tracklist-dark, $color-tracklist-light));
+		@include background-image(linear-gradient(to right, $color-tracklist-dark, $color-tracklist-light));
 	}
 	li:nth-of-type(even){
-		@include background-image(linear-gradient(to-right, $color-tracklist-medium, $color-tracklist-light));
+		@include background-image(linear-gradient(to right, $color-tracklist-medium, $color-tracklist-light));
 	}
 }
 
