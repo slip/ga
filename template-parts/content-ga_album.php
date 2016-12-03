@@ -76,7 +76,20 @@
 		<?php endwhile; ?>
 		</ul>
 	<?php endif;
-
+		
+		if(have_rows('track_list')): ?>
+		<div class="tracklist-header">
+			Track List
+		</div>
+		<ul class="tracklist">
+		<?php while(have_rows('track_list')): the_row(); ?>
+			
+			<li><?php the_sub_field('track_name'); ?></li>
+			
+		<?php endwhile; ?>
+		</ul>
+	<?php endif; 
+	
 		the_content( sprintf(
 			/* translators: %s: Name of current post. */
 			wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'resolutionathens' ), array( 'span' => array( 'class' => array() ) ) ),

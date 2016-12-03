@@ -466,6 +466,32 @@ h1.album{
 	}
 }
 
+.tracklist-header{
+	@include font-size(30);
+	background-color: $color-subheading;
+	color: $color-background-light;
+	margin: 1.5em 0 0;
+	padding: 0.5em 1em;
+}
+
+.tracklist{
+	list-style: none;
+	margin: 0 0 1.5em;
+	padding-left: 0;
+	
+	li{
+		margin: 0;
+		padding: 1em 1.5em;
+	}
+	
+	li:nth-of-type(odd){
+		@include background-image(linear-gradient(to-right, $color-tracklist-dark, $color-tracklist-light));
+	}
+	li:nth-of-type(even){
+		@include background-image(linear-gradient(to-right, $color-tracklist-medium, $color-tracklist-light));
+	}
+}
+
 /*--------------------------------------------------------------
 # Store
 --------------------------------------------------------------*/
