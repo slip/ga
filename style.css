@@ -498,8 +498,8 @@ input[type="submit"] {
   border: none;
   background: #66877C;
   color: #FDF1D8;
-  font-weight: 400;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   margin: 0.5em 0;
   max-width: 350px;
   padding: 0.75em 2.5em;
@@ -1225,9 +1225,18 @@ object {
   display: block;
 }
 
+#page {
+  background-image: url(img/GAtourtextureA.png);
+}
+
 .site-content {
   margin-top: 72px;
-  background-image: url(img/GAtourtextureA.png);
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(51, 51, 51, 0.3);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(51, 51, 51, 0.3);
+  box-shadow: 0px 0px 5px 5px rgba(51, 51, 51, 0.3);
 }
 
 .site-header {
@@ -1378,6 +1387,7 @@ object {
 }
 .hp-newsletter input[type="email"] {
   width: 60%;
+  padding: 3.8px 1em;
 }
 .hp-newsletter input[type="submit"] {
   width: 40%;
@@ -2115,12 +2125,14 @@ h1.album {
   margin: 0;
 }
 .newsletter input[type="email"] {
+  padding: 4px 1em;
   width: 60%;
 }
 .newsletter input[type="submit"] {
   width: 40%;
   font-size: 13px;
   font-size: 0.8125rem;
+  font-weight: 700;
   padding: 0.55em 0.25em;
 }
 .newsletter .social-icon {
