@@ -1797,6 +1797,11 @@ h1.album {
   background-image: linear-gradient(to to-right, #f6c976, #f8d798);
 }
 
+.preview-track {
+  display: inline-block;
+  float: right;
+}
+
 /*--------------------------------------------------------------
 # Store
 --------------------------------------------------------------*/

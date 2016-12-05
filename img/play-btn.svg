@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="social-icon" width="20" height="20" viewBox="17816 1030 20 20"><defs><style>.a{fill:#f87439;}</style></defs><path class="a" d="M0,0,20,10h0L0,20Z" transform="translate(17816 1030)"/></svg>
