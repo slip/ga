@@ -15,20 +15,20 @@
 	<figure class="featured-image">
 		<?php the_post_thumbnail('medium'); ?>
 	</figure>
-	
+
 	<header class="entry-header">
 		<div class="artist"><?php the_field('artist_name'); ?></div>
 		<?php
-			the_title( '<h1 class="entry-title album">', '</h1>' );	
+			the_title( '<h1 class="entry-title album">', '</h1>' );
 		?>
 		<div class="release-info"><?php the_field('release_info'); ?></div>
 	</header><!-- .entry-header -->
-	
+
 	<div class="entry-content">
 	<?php if( have_rows('purchase_links') ): ?>
 		<ul class="purchase-links">
-		<?php while( have_rows('purchase_links') ): the_row(); 
-	
+		<?php while( have_rows('purchase_links') ): the_row();
+
 			$type = get_sub_field('type');
 			$description = get_sub_field('type_description');
 			$link = get_sub_field('link');
@@ -36,31 +36,31 @@
 
 			<li><a href="<?php echo $link; ?>">
 				<div class="type">
-				<?php 
-				if($type == 'Double LP'): 
+				<?php
+				if($type == 'Double LP'):
 					get_template_part('template-parts/icons/icon', 'doublelp.svg');
-					
-				elseif($type == 'Vinyl'): 
+
+				elseif($type == 'Vinyl'):
 					get_template_part('template-parts/icons/icon', 'vinyl.svg');
-					
-				elseif($type == 'Download'): 
+
+				elseif($type == 'Download'):
 					get_template_part('template-parts/icons/icon', 'download.svg');
-				
-				elseif($type == 'CD'): 
+
+				elseif($type == 'CD'):
 					get_template_part('template-parts/icons/icon', 'cd.svg');
-					
-				elseif($type == '2 CD'): 
+
+				elseif($type == '2 CD'):
 					get_template_part('template-parts/icons/icon', '2cd.svg');
-					
-				elseif($type == 'DVD'): 
+
+				elseif($type == 'DVD'):
 					get_template_part('template-parts/icons/icon', 'dvd.svg');
-					
-				elseif($type == '2 CD + DVD'): 
+
+				elseif($type == '2 CD + DVD'):
 					get_template_part('template-parts/icons/icon', '2cd+dvd.svg');
-					
-				elseif($type == 'Blu-Ray'): 
+
+				elseif($type == 'Blu-Ray'):
 					get_template_part('template-parts/icons/icon', 'bluray.svg');
-				
+
 				endif;
 				?>
 				</div>
@@ -70,32 +70,31 @@
 				<div class="type-description">
 					<?php echo $description; ?>
 				</div>
-					
+
 			</a></li>
-	
+
 		<?php endwhile; ?>
 		</ul>
 	<?php endif;
-		
+
 		if(have_rows('track_list')): ?>
 		<div class="tracklist-header">
 			Track List
 		</div>
 		<ul class="tracklist">
-		<?php while(have_rows('track_list')): the_row(); ?>
-			
-			<li><?php the_sub_field('track_name'); ?></li>
-			
+		<?php while(have_rows('track_list')): the_row();
+      $preview_track_icon = get_template_part('template-parts/icons/icon', 'play-btn.svg'); ?>
+			<li><?php the_sub_field('track_name'); ?><div class="preview-track"><a href="<?php the_sub_field('preview_track'); ?>"> <img src="/wp-content/themes/resolutionathens/img/play-btn.svg" alt="Preview Track"> <?php echo $preview_track_icon; //#TODO:seems like this should work. ?></a></div></li>
 		<?php endwhile; ?>
 		</ul>
-	<?php endif; 
-	
+	<?php endif;
+
 		the_content( sprintf(
 			/* translators: %s: Name of current post. */
 			wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'resolutionathens' ), array( 'span' => array( 'class' => array() ) ) ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		) );
-		
+
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'resolutionathens' ),
 			'after'  => '</div>',
@@ -117,7 +116,7 @@
 		</div>
 	</a>
 	<?php endif; ?>
-	
-	
+
+
 
 </article><!-- #post-## -->
