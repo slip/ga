@@ -2066,6 +2066,9 @@ h1.album {
 --------------------------------------------------------------*/
 .widget {
   margin: 0 auto 1.5em;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .widget .tour-header {
   font-size: 30px;
@@ -2080,6 +2083,7 @@ h1.album {
 .widget .tour-date {
   border-right: 1px solid #43312A;
   border-bottom: 1px solid #43312A;
+  flex-grow: 1;
 }
 .widget .tour-date .date {
   padding: 1em 0;
