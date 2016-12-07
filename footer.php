@@ -25,7 +25,7 @@
 				</div>
 				<div class="col-three">
 					<div class="footer-logo">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Gregg Allman" />
+						<img src="<?php echo get_template_directory_uri(); ?>/img/ga-footer-min.png" alt="Gregg Allman" />
 					</div>
 				</div>
 				<div class="col-three">
