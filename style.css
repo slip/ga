@@ -1585,6 +1585,16 @@ object {
   margin-left: auto;
   margin-right: auto;
 }
+.card-grid .video-card {
+  background: #78814E;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 .card-grid .featured-image {
   text-align: center;
   padding: 0.75em;
