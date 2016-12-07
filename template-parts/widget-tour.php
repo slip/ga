@@ -9,17 +9,17 @@
 		'order' => 'ASC',
 		'meta_query' => array(
 			array(
-		        'key'		=> 'date',
-		        'compare'	=> '>=',
-		        'value'		=> $today,
-		    )       
-        ),
+						'key'		=> 'date',
+						'compare'	=> '>=',
+						'value'		=> $today,
+				)
+				),
 	);
-						
+
 	$query1 = new WP_Query( $args1 );
-						
+
 	while ( $query1->have_posts()): $query1->the_post();
-	
+
 	$date = get_field('date');
 	$date = new DateTime($date);
 	$city = get_field('city');
@@ -32,15 +32,10 @@
 		<div class="details">
 			<div class="location">
 				<div class="title">
-					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					<a href="/tour"><?php the_title(); ?></a>
 				</div>
 				<div class="city">
-					<a href="<?php the_permalink(); ?>"><?php echo $city; ?></a>
-				</div>
-			</div>
-			<div class="buttons">
-				<div class="info">
-					<a href="<?php the_permalink(); ?>"><?php get_template_part('template-parts/icons/icon','info.svg'); ?></a>
+					<a href="/tour"><?php echo $city; ?></a>
 				</div>
 			</div>
 		</div>
