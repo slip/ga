@@ -1853,7 +1853,8 @@ h1.album {
   display: -webkit-flex;
   display: flex;
   font-family: "Merriweather", serif;
-  border-bottom: 1px solid #604337;
+  border-right: 1px solid #43312A;
+  border-bottom: 1px solid #43312A;
 }
 .tour-date .date {
   background: #604337;
@@ -1913,6 +1914,12 @@ h1.album {
   font-weight: 500;
 }
 .tour-date .city {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.tour-date .additional-info {
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
 }
@@ -2060,6 +2067,10 @@ h1.album {
   font-family: "Merriweather", serif;
   padding: 0.25em 0.5em;
 }
+.widget .tour-date {
+  border-right: 1px solid #43312A;
+  border-bottom: 1px solid #43312A;
+}
 .widget .tour-date .date {
   padding: 1em 0;
   width: 50px;
@@ -2077,6 +2088,7 @@ h1.album {
 .widget .tour-date .details {
   padding: 1em;
   width: calc(100% - 50px);
+  height: auto;
 }
 .widget .tour-date .title {
   font-size: 16px;

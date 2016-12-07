@@ -20,7 +20,7 @@
 					<div class="legal">
 						<p>The GREGG ALLMAN name, The GREGG ALLMAN & FRIENDS name, likenesses and logos, are all registered trademarks of Gregg Allman, whose rights are specifically reserved.</p>
 						<p>Any artwork, visual, or audio representations used on this web site CONTAINING ANY REGISTERED TRADEMARKS are under license from Gregg Allman.</p>
-						<p><?php if(is_front_page()):{ ?><a href="http://resolutionathens.com/" target="_blank">Designed by Resolution</a><?php } else:{ ?><a href="http://resolutionathens.com/" target="_blank" rel="nofollow">Designed by Resolution</a><?php } endif; ?></p>
+						<p><?php if(is_front_page()):{ ?><a href="http://resolutionathens.com/" target="_blank">Designed by Resolution</a><?php } else:{ ?><a href="http://resolution.agency/" target="_blank" rel="nofollow">Designed by Resolution</a><?php } endif; ?></p>
 					</div>
 				</div>
 				<div class="col-three">

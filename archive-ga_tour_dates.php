@@ -15,7 +15,7 @@ get_header(); ?>
 			<header>
 				<h1 class="page-title hidden-text">Tour</h1>
 			</header>
-			
+
 			<div class="tour-dates">
 				<?php
 				$today = date('Ymd');
@@ -26,24 +26,25 @@ get_header(); ?>
 					'order' => 'ASC',
 					'meta_query' => array(
 						array(
-					        'key'		=> 'date',
-					        'compare'	=> '>=',
-					        'value'		=> $today,
-					    )       
-			        ),
+									'key'		=> 'date',
+									'compare'	=> '>=',
+									'value'		=> $today,
+							)
+							),
 				);
-									
+
 				$query1 = new WP_Query( $args1 );
-									
+
 				while ( $query1->have_posts()): $query1->the_post();
-				
+
 				$date = get_field('date');
 				$date = new DateTime($date);
 				$city = get_field('city');
+				$additional_info = get_field('additional_info');
 				$status = get_field('status');
 				$ticket = get_field('ticket_link');
-				
-				?>	
+
+				?>
 				<div class="tour-date">
 					<div class="date">
 						<div class="month"><?php echo $date->format('M'); ?></div>
@@ -57,21 +58,27 @@ get_header(); ?>
 							<div class="city">
 								<a href="<?php the_permalink(); ?>"><?php echo $city; ?></a>
 							</div>
+							<div class="additional-info">
+								<a href="<?php the_permalink(); ?>"><?php echo $additional_info; ?></a>
+							</div>
 						</div>
 						<div class="buttons">
 							<div class="ticket">
-								<?php 
+								<?php
 								if($status == 'onsale'):
 								?>
 									<a href="<?php echo $ticket; ?>" target="_blank"><?php get_template_part('template-parts/icons/icon', 'on-sale.svg'); ?></a>
-								<?php	
+								<?php
 								elseif($status == 'soldout'):
-									get_template_part('template-parts/icons/icon', 'sold-out.svg'); 
+								?>
+								<a href="<?php echo $ticket; ?>" target="_blank"><?php
+									get_template_part('template-parts/icons/icon', 'sold-out.svg');
+									?></a>
+								<?php
+								elseif($status == 'comingsoon'):
+									get_template_part('template-parts/icons/icon', 'coming-soon.svg');
 								endif;
 								?>
-							</div>
-							<div class="info">
-								<a href="<?php the_permalink(); ?>"><?php get_template_part('template-parts/icons/icon','info.svg'); ?></a>
 							</div>
 							<div class="share">
 								<div class="share-button">
@@ -85,12 +92,12 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-					
+
 				<?php endwhile;
 				wp_reset_postdata();
 				?>
-			</div>			
-		
+			</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
@@ -100,4 +107,3 @@ get_sidebar();
 </div>
 <?php
 get_footer();
-

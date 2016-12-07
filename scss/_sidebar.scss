@@ -42,6 +42,8 @@
 	}
 
 	.tour-date{
+    border-right: 1px solid $color-tour-dark;
+    border-bottom: 1px solid $color-tour-dark;
 
 		.date{
 			padding: 1em 0;
@@ -61,6 +63,7 @@
 		.details{
 			padding: 1em;
 			width: calc(100% - 50px);
+      height: auto;
 		}
 
 		.title{

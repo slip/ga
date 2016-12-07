@@ -572,7 +572,9 @@ h1.album{
 .tour-date{
 	@include display-flex;
 	font-family: $font-subheading;
-	border-bottom: 1px solid $color-tour-light;
+	border-right: 1px solid $color-tour-dark;
+  // border-left: 1px solid $color-tour-dark;
+  border-bottom: 1px solid $color-tour-dark;
 
 	.date{
 		background: $color-tour-light;
@@ -626,8 +628,14 @@ h1.album{
 	}
 
 	.city{
+    font-family: $font-base;
 		@include font-size(14);
 	}
+
+  .additional-info{
+    font-family: $font-base;
+    @include font-size(14);
+  }
 
 	.buttons{
 		@include display-flex;
