@@ -2318,9 +2318,7 @@ h1.album {
 
 .footer-logo {
   text-align: center;
-}
-.footer-logo img {
-  max-width: 300px;
+  opacity: 0.15;
 }
 
 .footer-social-icons {
