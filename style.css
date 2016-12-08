@@ -1456,8 +1456,8 @@ object {
   font-weight: 400;
 }
 .hp-recent-news .title {
-  font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 .hp-recent-news .title a {
   text-decoration: none;
@@ -1533,13 +1533,7 @@ object {
 }
 .card-grid article,
 .card-grid .card-container {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-flex;
-  display: flex;
-  margin: 0 auto 1.5em;
-  padding: 0 4px 0;
+  margin-bottom: 2em;
 }
 .card-grid article:nth-of-type(4n+1) .card,
 .card-grid .card-container:nth-of-type(4n+1) .card {
@@ -1578,7 +1572,8 @@ object {
   background-image: url(img/GAnewstextureB.png);
 }
 .card-grid .card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
   font-weight: inherit;
@@ -1608,6 +1603,7 @@ object {
 .card-grid .lower-text {
   padding: 0.75em;
   color: #43312A;
+  flex-grow: 1;
 }
 .card-grid .entry-title {
   font-size: 20px;
@@ -1623,7 +1619,6 @@ object {
   font-size: 14px;
   font-size: 0.875rem;
   color: #FFFFFF;
-  font-family: "Merriweather", serif;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -1633,18 +1628,12 @@ object {
 
 .card-grid-three article,
 .card-grid-three .card-container {
-  width: 33.33333%;
+  width: 32%;
 }
 
 .card-grid-two article,
 .card-grid-two .card-container {
   width: 50%;
-}
-
-.blog .card,
-.archive .card,
-.search .card {
-  width: 260px;
 }
 
 /*--------------------------------------------------------------
