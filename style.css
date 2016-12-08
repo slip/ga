@@ -1719,12 +1719,16 @@ figure.featured-image {
 /*--------------------------------------------------------------
 # Albums
 --------------------------------------------------------------*/
+.post-type-archive-ga_album .upper-text {
+  margin: 0 .75em;
+}
 .post-type-archive-ga_album .lower-text {
   font-size: 14px;
   font-size: 0.875rem;
+  margin: 0 .75em;
 }
 .post-type-archive-ga_album .card {
-  width: 400px;
+  width: 100%;
 }
 
 .artist {

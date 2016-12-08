@@ -432,12 +432,16 @@ figure.featured-image{
 
 .post-type-archive-ga_album{
 
+  .upper-text{
+    margin: 0 .75em;
+  }
 	.lower-text{
 		@include font-size(14);
+    margin: 0 .75em;
 	}
 
 	.card{
-		width: 400px;
+		width: 100%;
 	}
 }
 
