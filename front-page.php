@@ -15,7 +15,24 @@
 get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		
-		<div class="hp-hero">
+		<div class="hp-featured-area">
+		<?php
+		if( have_rows('slideshow_images') ): 
+		?>
+			
+			<div class="cycle-slideshow" data-cycle-slides="div" data-cycle-speed="4000">
+			<?php 
+			while( have_rows('slideshow_images') ): the_row(); 
+				$image = get_sub_field('image');
+			?>
+				
+				<div class="hp-hero" style="background-image:url('<?php echo $image['url']; ?>');"></div>
+		
+			<?php endwhile; ?>
+			</div>
+		<?php endif; ?>
+				
+	
 			<div class="hp-newsletter">
 				<div class="lg-container clear">
 					<div class="wrapper clear">
