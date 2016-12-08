@@ -26,10 +26,10 @@
 			// $json['data'] returns an array, why am I getting "Trying to get property of non-object" from line 30?
 
 			// loop and display
-			foreach ($json['data'] as $post) {
+			foreach ($json['data'] as $instagram) {
 
-				$pic_link=$post['link'];
-				$pic_src=$post['images']['standard_resolution']['url'];
+				$pic_link=$instagram['link'];
+				$pic_src=$instagram['images']['standard_resolution']['url'];
 
 				echo "<div class='card-container'>";
 					echo "<div class='featured-image'>";
