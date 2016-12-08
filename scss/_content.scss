@@ -1,6 +1,26 @@
 /*--------------------------------------------------------------
 # Front Page
 --------------------------------------------------------------*/
+.hp-featured-area{
+	height: 620px;
+	margin-top: -11px;
+	position: relative;
+}
+
+.cycle-slideshow{
+	height: 100%;
+	width: 100%;
+	
+	div{
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: center center;
+		@include background-size(cover);
+		z-index: 99;
+	}
+}
 
 .hp-hero{
 	background-image: url('img/hp-hero.png');
@@ -8,9 +28,6 @@
 	background-attachment: scroll;
 	background-position: center center;
 	@include background-size(cover);
-	height: 620px;
-	margin-top: -11px;
-	position: relative;
 }
 
 .hp-newsletter{
@@ -22,6 +39,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+	z-index: 999;
 
 	.wrapper{
 		float: right;
@@ -511,10 +529,10 @@ h1.album{
 	}
 
 	li:nth-of-type(odd){
-		@include background-image(linear-gradient(to-right, $color-tracklist-dark, $color-tracklist-light));
+		@include background-image(linear-gradient(to right, $color-tracklist-dark, $color-tracklist-light));
 	}
 	li:nth-of-type(even){
-		@include background-image(linear-gradient(to-right, $color-tracklist-medium, $color-tracklist-light));
+		@include background-image(linear-gradient(to right, $color-tracklist-medium, $color-tracklist-light));
 	}
 }
 

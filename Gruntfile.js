@@ -65,6 +65,7 @@ module.exports = function(grunt) {
 					'js/custom-body.min.js': [
 					'js/skip-link-focus-fix.js',
 					'js/featherlight.js',
+					'js/cycle2.js',
 					'js/custom-body.js',
 					'js/dev-scripts.js'
 					] 
@@ -83,6 +84,7 @@ module.exports = function(grunt) {
 					],
 					'js/custom-body.min.js': [
 					'js/skip-link-focus-fix.js',
+					'js/cycle2.js',
 					'js/custom-body.js'
 					] 
 				}
@@ -99,6 +101,7 @@ module.exports = function(grunt) {
 					],
 					'js/custom-body.min.js': [
 					'js/skip-link-focus-fix.js',
+					'js/cycle2.js',
 					'js/custom-body.js'
 					] 
 				}
