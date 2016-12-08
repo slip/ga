@@ -1535,6 +1535,10 @@ object {
 .card-grid .card-container {
   margin-bottom: 2em;
 }
+.card-grid article:nth-of-type(4n+1),
+.card-grid .card-container:nth-of-type(4n+1) {
+  background: #78814E;
+}
 .card-grid article:nth-of-type(4n+1) .card,
 .card-grid .card-container:nth-of-type(4n+1) .card {
   background: #78814E;
@@ -1543,6 +1547,10 @@ object {
 .card-grid .card-container:nth-of-type(4n+1) .featured-image {
   background: #879158;
   background-image: url(img/GAnewstextureA.png);
+}
+.card-grid article:nth-of-type(4n+2),
+.card-grid .card-container:nth-of-type(4n+2) {
+  background: #FFBA5C;
 }
 .card-grid article:nth-of-type(4n+2) .card,
 .card-grid .card-container:nth-of-type(4n+2) .card {
@@ -1553,6 +1561,10 @@ object {
   background: #ffc576;
   background-image: url(img/GAnewstextureB.png);
 }
+.card-grid article:nth-of-type(4n+3),
+.card-grid .card-container:nth-of-type(4n+3) {
+  background: #66877C;
+}
 .card-grid article:nth-of-type(4n+3) .card,
 .card-grid .card-container:nth-of-type(4n+3) .card {
   background: #66877C;
@@ -1561,6 +1573,10 @@ object {
 .card-grid .card-container:nth-of-type(4n+3) .featured-image {
   background: #729489;
   background-image: url(img/GAnewstextureA.png);
+}
+.card-grid article:nth-of-type(4n+4),
+.card-grid .card-container:nth-of-type(4n+4) {
+  background: #F87439;
 }
 .card-grid article:nth-of-type(4n+4) .card,
 .card-grid .card-container:nth-of-type(4n+4) .card {
@@ -1673,9 +1689,6 @@ object {
 .post-type-archive-ga_band_member .lower-text {
   font-size: 14px;
   font-size: 0.875rem;
-}
-.post-type-archive-ga_band_member .card {
-  width: 260px;
 }
 
 figure.featured-image {
