@@ -203,11 +203,13 @@
 
 	article,
 	.card-container{
-		// @include display-flex;
+    // display: flex;
+    // flex-direction: column;
 		margin-bottom: 2em;
 		// padding: 0 4px 0;
 
 		&:nth-of-type(4n+1){
+      background: $color-newsletter;
 			.card{
 				background: $color-newsletter;
 			}
@@ -219,6 +221,7 @@
 		}
 
 		&:nth-of-type(4n+2){
+      background: $color-nav-link;
 			.card{
 				background: $color-nav-link;
 			}
@@ -230,6 +233,7 @@
 		}
 
 		&:nth-of-type(4n+3){
+      background: $color-button;
 			.card{
 				background: $color-button;
 			}
@@ -241,6 +245,7 @@
 		}
 
 		&:nth-of-type(4n+4){
+      background: $color-link;
 			.card{
 				background: $color-link;
 			}
@@ -395,7 +400,7 @@
 	}
 
 	.card{
-		width: 260px;
+		// width: 260px;
 	}
 }
 
