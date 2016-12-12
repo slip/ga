@@ -1,0 +1,103 @@
+#page
+  background-image: url(img/GAtourtextureA.png)
+
+.site-content
+  margin-top: 72px
+
+  // background-image: url(img/GAtourtextureA.png);
+  max-width: 1280px
+  margin-left: auto
+  margin-right: auto
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(51, 51, 51, 0.3)
+  -moz-box-shadow: 0px 0px 5px 5px rgba(51, 51, 51, 0.3)
+  box-shadow: 0px 0px 5px 5px rgba(51, 51, 51, 0.3)
+
+.site-header
+  background-color: $color-header
+  background-image: url(img/tile-header.png)
+  background-repeat: repeat-x
+
+  +background-size(auto 72px)
+
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 999
+  visibility: visible
+
+  +opacity(1)
+
+  +transition(all 0.5s ease)
+
+  +box-shadow(1px 1px 10px rgba(black, 0.2))
+
+.site-header.hidden
+  visibility: hidden
+
+  +opacity(0)
+
+.site-branding
+  float: left
+
+.site-title
+  margin: 0 0 -0.75em
+  line-height: 0.8
+
+  +font-size($base-size)
+
+  img
+    width: 224px
+
+// /*--------------------------------------------------------------
+//  *## Menus
+//  *--------------------------------------------------------------
+
+.main-navigation
+  font-family: $font-legible
+  float: left
+  margin: 1.75em 0 0.5em 1.75em
+
+  ul
+    display: block
+    list-style: none
+    margin: 0
+    padding-left: 0
+    text-align: right
+
+  a
+    +font-size(16)
+
+    color: $color-nav-link
+    display: block
+    font-weight: 700
+    letter-spacing: 1px
+    position: relative
+    text-decoration: none
+    text-transform: uppercase
+
+  li
+    +inline-block
+
+    padding: 0 0 0 1.5em
+    margin: 0
+
+    &:hover > a,
+    &:active > a,
+    &:focus > a
+      color: $color-link
+
+  ul ul
+    display: none
+
+  ul ul ul
+    display: none
+
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a,
+  .current-menu-ancestor > a
+    color: $color-link
+
+.menu-toggle
+  display: none

@@ -1,0 +1,441 @@
+// /*--------------------------------------------------------------
+ // *# Modernizr Fallbacks
+ // *--------------------------------------------------------------
+
+.no-flexbox
+  .row
+    display: block
+
+  .column
+    +inline-block
+
+    margin-bottom: 1.5em
+
+  .col-two,
+  .col-three,
+  .col-one-third,
+  .col-two-third,
+  .col-one-fourth,
+  .col-three-fourth,
+  .col-four
+    float: left
+    margin-bottom: 1.5em
+
+  .card-grid
+    +inline-block
+
+    article,
+    .card-container
+      +inline-block
+
+  .tour-date
+    +inline-block
+
+    .details,
+    .buttons
+      +inline-block
+
+.no-inlinesvg
+  .social-icon
+    display: list-item
+    margin-left: auto !important
+    margin-right: auto !important
+
+.no-mediaqueries
+  body
+    min-width: 1081px
+
+  .site-header
+    position: static
+
+  .site-content
+    margin-top: 0
+
+// /*--------------------------------------------------------------
+//  *# Media Queries
+//  *--------------------------------------------------------------
+
+@media screen and (max-width: 1265px)
+  .content-area
+    float: none
+    width: 100%
+    padding: 0
+
+  .widget-area
+    float: none
+    width: 100%
+    margin: 1.5em auto
+    text-align: center
+
+    .promo
+      +inline-block
+
+      width: 320px
+      margin: 1.5em auto 0
+
+    .tour-dates
+      display: none
+
+    .newsletter
+      width: 100%
+
+@media screen and (max-width: 1121px)
+  .main-navigation
+    li
+      padding: 0 0 0 0.75em
+      margin: 0
+
+@media screen and (max-width: 1040px)
+  .site-footer
+    text-align: center
+
+    .row
+      display: block
+
+    .col-three
+      width: 100%
+
+  .legal
+    float: none
+    margin: 1.5em auto
+
+  .footer-logo
+    display: none
+
+  .footer-social-icons
+    text-align: inherit
+
+@media screen and (max-width: 920px)
+  .no-js
+    .site-header
+      position: static
+      text-align: center
+
+    .site-title
+      margin-top: 0.5em
+
+    .site-content
+      margin: 0
+
+    .site-branding
+      float: none
+      width: 100%
+
+    .main-navigation
+      margin: 0.5em auto 1em
+      float: none
+
+      ul
+        text-align: inherit
+
+      li
+        margin-top: 0.5em
+
+  .js
+    .site-header
+      min-height: 72px
+
+    .site-content
+      margin-top: 72px
+
+    .site-branding
+      float: none
+      width: 100%
+
+    .site-title
+      width: 150px
+      margin-top: 0.5em
+
+    .main-navigation
+      float: none
+      margin: 0
+
+      ul
+        text-align: center
+        margin: 1.5em 0
+        height: calc(100vh - 100px)
+
+        +display-flex
+
+        +flex-direction(column)
+
+        +justify-content(space-around)
+
+      .primary-menu-ul.closed
+        display: none
+
+      li
+        display: block
+        padding: 0
+        margin: 0
+
+      a
+        +font-size(16)
+
+        font-family: $font-base
+        font-weight: 400
+        letter-spacing: 0.4em
+        padding: 0.5em 0
+
+        &:after
+          display: none
+
+      .current_page_item > a,
+      .current-menu-item > a,
+      .current_page_ancestor > a,
+      .current-menu-ancestor > a
+        &:after
+          display: none
+
+      .menu-toggle
+        display: block
+        z-index: 9999
+        position: fixed
+        top: 20px
+        right: 3%
+        width: 40px
+        margin: 0
+        padding: 0
+        text-indent: 9999px
+        background: transparent
+        cursor: pointer
+
+        span
+          display: block
+          position: absolute
+          height: 5px
+          width: 100%
+          background: $color-nav-link
+
+          +opacity(1)
+
+          left: 0
+
+          +transform(rotate(0deg))
+
+          +transition(all 0.25s ease-in-out)
+
+        &:hover
+          outline: none
+
+          span
+            background: $color-button
+
+      #line-1
+        top: 0
+
+      #line-2,
+      #line-3
+        top: 12px
+
+      #line-4
+        top: 24px
+
+      .menu-toggle.open
+        #line-1
+          +opacity(0)
+
+        #line-2
+          +transform(rotate(45deg))
+
+        #line-3
+          +transform(rotate(-45deg))
+
+        #line-4
+          +opacity(0)
+
+  .page-template-page-store
+    .row
+      .col-one-third,
+      .col-two-third
+        width: 100%
+        padding: 0
+        text-align: center
+
+  .hp-featured-area
+    height: 400px
+    max-height: 80vh
+
+@media screen and (max-width: 864px)
+  .card-grid-three
+    article,
+    .card-container
+      width: 49%
+
+@media screen and (max-width: 780px)
+  .row
+    +justify-content(center)
+
+  .col-two
+    width: 100%
+
+  .col-three,
+  .col-four,
+  .col-one-third,
+  .col-one-fourth
+    width: 50%
+
+  .col-five
+    width: $one-third
+
+  .col-six
+    width: $one-third
+
+  .home
+    .col-one-third
+      width: 100%
+
+      +order(1)
+
+    .col-two-third
+      width: 100%
+
+      +order(2)
+
+    .row,
+    .widget
+      margin: 0
+
+    .card-grid
+      margin: 0
+
+  .hp-recent-news
+    padding-right: 0
+
+@media screen and (min-width: 680px)
+  .hidden-text
+    clip: rect(1px, 1px, 1px, 1px)
+    position: absolute !important
+    height: 1px
+    width: 1px
+    overflow: hidden
+
+  .hidden-text:focus
+    background-color: #f1f1f1
+    border-radius: 3px
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6)
+    clip: auto !important
+    color: #21759b
+    display: block
+    font-size: 14px
+    font-size: 0.875rem
+    font-weight: bold
+    height: auto
+    left: 5px
+    line-height: normal
+    padding: 15px 23px 14px
+    text-decoration: none
+    top: 5px
+    width: auto
+    z-index: 100000
+
+    /* Above WP toolbar.
+
+@media screen and (max-width: 680px)
+  .hidden-text
+    max-width: 92%
+    margin-left: auto
+    margin-right: auto
+
+  .card-grid-two
+    display: block
+
+    article,
+    .card-container
+      width: 100%
+      display: block
+      margin: 0 auto
+      padding: 0
+
+  .hp-hero
+    .hp-newsletter
+      text-align: center
+
+      .wrapper
+        width: 100%
+        float: none
+        padding: 1.5em 0 1em
+
+      form,
+      .social-icons
+        float: none
+
+  .tour-date
+    .ticket,
+    .share
+      display: none
+
+    .info
+      padding: 0
+
+@media screen and (max-width: 580px)
+  .row
+    display: block
+
+  .col-three,
+  .col-four,
+  .col-five,
+  .col-six,
+  .col-one-third,
+  .col-two-third,
+  .col-one-fourth,
+  .col-three-fourth
+    width: 100%
+    margin: 0 auto
+
+  .gutter,
+  .gutter-half
+    padding: 0
+
+  .card-grid-three
+    display: block
+
+    article,
+    .card-container
+      display: block
+      width: 100%
+      margin: 0 auto
+      padding: 0
+
+  .blog,
+  .archive,
+  .search,
+  .page-template-page-store,
+  .page-template-page-visuals
+    .card
+      width: 100%
+
+  .page-template-page-store
+    .graphic
+      display: none
+
+    .banner
+      .button
+        +inline-block
+
+        margin-bottom: 1.5em
+
+    .newsletter
+      margin-bottom: 1.5em
+
+  .mobile-container-full
+    max-width: 100%
+
+  .home
+    .page-content
+      margin: 0
+
+@media screen and (max-width: 480px)
+  .hp-recent-news
+    .excerpt
+      display: none
+
+// /*--------------------------------------------------------------
+//  *# Admin Bar fix
+//  *--------------------------------------------------------------
+.admin-bar .site-header
+  top: 32px
+
+@media screen and (max-width: 782px)
+  .admin-bar .site-header
+    top: 46px
