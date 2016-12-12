@@ -1,0 +1,43 @@
+.site-footer
+  background-color: $color-header
+  color: $color-text-light
+  background-image: url(img/tile-wood-115h.png)
+  background-blend-mode: multiply
+
+  .row
+    align-items: center
+
+.legal
+  +font-size(12)
+
+  font-family: $font-subheading
+  float: left
+  max-width: 322px
+
+  a
+    background: pink
+    color: $color-text-light
+    font-weight: 400
+    text-decoration: none
+
+.footer-logo
+  text-align: center
+  opacity: 0.15
+
+  // img{
+  // 	max-width: 340px;
+  // }
+
+.footer-social-icons
+  text-align: right
+
+.social-icon
+  margin: 0.75em
+  fill: $color-text-light
+
+  +opacity(0.8)
+
+  &:hover,
+  &:active,
+  &:focus
+    fill: $color-link

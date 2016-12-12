@@ -1,0 +1,131 @@
+/*--------------------------------------------------------------
+ *# Promo Widgets (Sidebar)
+ *--------------------------------------------------------------
+.widget-area
+  .promo
+    text-align: center
+    margin: 1.5em 0
+    line-height: 1
+
+    a
+      display: block
+      padding: 1em 0.5em
+
+    &:nth-of-type(2n+1)
+      background-color: $color-link
+
+    &:nth-of-type(2n+2)
+      background-color: $color-subheading
+
+/*--------------------------------------------------------------
+ *# Tour Widget (Sidebar / Home)
+ *--------------------------------------------------------------
+
+.widget
+  margin: 0 auto 1.5em
+  display: flex
+  flex-direction: column
+  height: 100%
+
+  .tour-header
+    +font-size(30)
+
+    background: $color-tour-dark
+    color: $color-background-light
+    background-image: url(img/tile-wood-115h.png)
+    background-blend-mode: multiply
+    font-family: $font-subheading
+    padding: 0.25em 0.5em
+
+  .tour-date
+    border-right: 1px solid $color-tour-dark
+    border-bottom: 1px solid $color-tour-dark
+    flex-grow: 1
+
+    .date
+      padding: 1em 0
+      width: 50px
+
+    .month
+      +font-size(15)
+
+      line-height: 1
+
+    .day
+      +font-size(30)
+
+      line-height: 1
+
+    .details
+      padding: 1em
+      width: calc(100% - 50px)
+      height: auto
+
+    .title
+      +font-size(16)
+
+    .city
+      +font-size(12)
+
+    .buttons
+      text-align: right
+
+    .info
+      padding: 0
+
+  .tour-footer
+    +font-size(14)
+
+    font-family: $font-legible
+    text-align: center
+    text-transform: uppercase
+
+    a
+      background: $color-tour-dark
+      color: $color-nav-link
+      display: block
+      padding: 1em 0.5em
+      text-decoration: none
+      font-weight: 700
+
+      &:hover,
+      &:active,
+      &:focus
+        background: $color-tour-light
+        color: $color-input
+
+/*--------------------------------------------------------------
+ *# Newsletter Widget (Sidebar / Store)
+ *--------------------------------------------------------------
+
+.newsletter
+  background-image: url(img/sidebar-newsletter-bkgd.jpg)
+
+  +background-size(contain)
+
+  form
+    padding: 0 0.5em 1em
+
+  input
+    float: left
+    margin: 0
+
+  input[type="email"]
+    padding: 4px 1em
+    width: 60%
+
+  input[type="submit"]
+    width: 40%
+
+    +font-size(13)
+
+    font-weight: 700
+    padding: 0.55em 0.25em
+
+  .social-icon
+    fill: $color-background-light
+
+    &:hover,
+    &:active,
+    &:focus
+      fill: $color-input
