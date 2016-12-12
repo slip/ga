@@ -83,8 +83,12 @@
 		</div>
 		<ul class="tracklist">
 		<?php while(have_rows('track_list')): the_row();
-      $preview_track_icon = get_template_part('template-parts/icons/icon', 'play-btn.svg'); ?>
-			<li><?php the_sub_field('track_name'); ?><div class="preview-track"><a href="<?php the_sub_field('preview_track'); ?>"> <img src="/wp-content/themes/resolutionathens/img/play-btn.svg" alt="Preview Track"> <?php echo $preview_track_icon; //#TODO:seems like this should work. ?></a></div></li>
+      $track_title = get_sub_field('track_name');
+      $track_url = get_sub_field('preview_track');
+      ?>
+			<li><?php echo $track_title; ?>
+        <?php if (!empty($track_url)): ?> <div class="preview-track"><a href="<?php echo $track_url; ?>"> <img src="/wp-content/themes/resolutionathens/img/play-btn.svg" alt="Preview Track"></a></div></li>
+        <?php endif; ?>
 		<?php endwhile; ?>
 		</ul>
 	<?php endif;
