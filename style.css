@@ -1231,20 +1231,8 @@ object {
         color: #FFFFFF; }
 
 .card-grid {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-flex;
   display: flex;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
   margin: 1.5em auto; }
   .card-grid article,
@@ -1338,7 +1326,8 @@ object {
 
 .card-grid-three article,
 .card-grid-three .card-container {
-  width: 32%; }
+  width: 32%;
+  max-width: 32; }
 
 .card-grid-two article,
 .card-grid-two .card-container {
@@ -1499,7 +1488,8 @@ h1.album {
 .page-template-page-store .card-grid {
   margin-top: 0; }
 .page-template-page-store .card {
-  width: 360px; }
+  width: 360px;
+  max-width: 100%; }
 .page-template-page-store .banner .button {
   display: none; }
 
@@ -2159,7 +2149,7 @@ h1.album {
 @media screen and (max-width: 864px) {
   .card-grid-three article,
   .card-grid-three .card-container {
-    width: 49%; } }
+    width: 48%; } }
 @media screen and (max-width: 780px) {
   .row {
     -moz-justify-content: center;
