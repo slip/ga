@@ -87,7 +87,13 @@
       $track_url = get_sub_field('preview_track');
       ?>
 			<li><?php echo $track_title; ?>
-        <?php if (!empty($track_url)): ?> <div class="preview-track"><a href="<?php echo $track_url; ?>"> <img src="/wp-content/themes/resolutionathens/img/play-btn.svg" alt="Preview Track"></a></div></li>
+        <?php if (!empty($track_url)): ?>
+          <div class="preview-track">
+            <audio controls>
+              <source src="<?php echo $track_url; ?>" type="audio/mpeg">
+            </audio>
+          </div>
+      </li>
         <?php endif; ?>
 		<?php endwhile; ?>
 		</ul>
