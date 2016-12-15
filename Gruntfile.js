@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-	
+
 		// Watch config ==
 		watch: {
 			compass: {
@@ -18,9 +18,9 @@ module.exports = function(grunt) {
 		compass: {
 			// Development ==
 			dev: {
-				options: {  
-					require: ['compass/import-once/activate'], 
-					httpPath: ['/'],           
+				options: {
+					require: ['compass/import-once/activate'],
+					httpPath: ['/'],
 					sassDir: ['scss'],
 					cssDir: ['.'],
 					imagesDir: ['img'],
@@ -34,9 +34,9 @@ module.exports = function(grunt) {
 			},
 			// Production ==
 			prod: {
-				options: {     
-					require: ['compass/import-once/activate'],  
-					httpPath: ['/'],          
+				options: {
+					require: ['compass/import-once/activate'],
+					httpPath: ['/'],
 					sassDir: ['scss'],
 					cssDir: ['.'],
 					imagesDir: ['img'],
@@ -65,10 +65,11 @@ module.exports = function(grunt) {
 					'js/custom-body.min.js': [
 					'js/skip-link-focus-fix.js',
 					'js/featherlight.js',
+          'js/featherlight.gallery.js',
 					'js/cycle2.js',
 					'js/custom-body.js',
 					'js/dev-scripts.js'
-					] 
+					]
 				}
 			},
 			// Staging ==
@@ -84,9 +85,11 @@ module.exports = function(grunt) {
 					],
 					'js/custom-body.min.js': [
 					'js/skip-link-focus-fix.js',
+          'js/featherlight.js',
+          'js/featherlight.gallery.js',
 					'js/cycle2.js',
 					'js/custom-body.js'
-					] 
+					]
 				}
 			},
 			// Production ==
@@ -101,9 +104,11 @@ module.exports = function(grunt) {
 					],
 					'js/custom-body.min.js': [
 					'js/skip-link-focus-fix.js',
+          'js/featherlight.js',
+          'js/featherlight.gallery.js',
 					'js/cycle2.js',
 					'js/custom-body.js'
-					] 
+					]
 				}
 			}
 		},
@@ -167,7 +172,7 @@ module.exports = function(grunt) {
 				},
 				options: {
 					"undef": true,
-					"unused": true,	
+					"unused": true,
 					"browser": true,
 					globals: {
 			          jQuery: true
