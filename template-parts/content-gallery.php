@@ -24,40 +24,16 @@
 
 			$type = get_sub_field('media_type');
 			$photo = get_sub_field('photo');
-			$video_title = get_sub_field('video_title');
-			$video_subtitle = get_sub_field('video_subtitle');
-			$video = get_sub_field('video');
 
-			if($type == 'photo'):
 			?>
 				<div class="card-container">
-					<a href="<?php echo $photo['url']; ?>" data-featherlight="<?php echo $photo['url']; ?>" class="card">
-						<div class="featured-image">
+          <div class="featured-image">
+					<a href="<?php echo $photo['url']; ?>" data-featherlight="<?php echo $photo['url']; ?>" class="gallery">
 							<img src="<?php echo $photo['sizes']['three-column-thumb']; ?>" alt="<?php echo $photo['alt']; ?>" />
-						</div>
 					</a>
+        </div>
+
 				</div>
-			<?php
-			endif;
-
-			if($type == 'video'):
-			?>
-				<div class="card-container">
-					<div class="card">
-						<div class="featured-video embed-container">
-							<?php echo $video; ?>
-						</div>
-						<div class="lower-text">
-							<h2 class="entry-title"><?php echo $video_title; ?></h2>
-							<div class="entry-meta"><?php echo $video_subtitle; ?></div>
-						</div>
-					</div>
-				</div>
-			<?php
-			endif;
-			?>
-
-
 
 			<?php endwhile; ?>
 
@@ -74,3 +50,24 @@
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
+<script>
+  jQuery(document).ready(function(){
+    jQuery('.gallery').featherlightGallery({
+      gallery: {
+        fadeIn: 300,
+        fadeOut: 300,
+        next: 'next »',
+        previous: '« previous'
+      },
+      openSpeed:    300,
+      closeSpeed:   300
+    });
+    jQuery('.gallery2').featherlightGallery({
+      gallery: {
+        next: 'next »',
+        previous: '« previous'
+      },
+      variant: 'featherlight-gallery2'
+    });
+  });
+</script>
