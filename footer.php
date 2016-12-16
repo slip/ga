@@ -30,10 +30,10 @@
 				</div>
 				<div class="col-three">
 					<div class="footer-social-icons">
-						<a href="#" target="_blank" title="YouTube"><?php get_template_part('template-parts/icons/icon', 'youtube.svg'); ?></a>
-						<a href="#" target="_blank" title="Facebook"><?php get_template_part('template-parts/icons/icon', 'facebook.svg'); ?></a>
-						<a href="#" target="_blank" title="Instagram"><?php get_template_part('template-parts/icons/icon', 'instagram.svg'); ?></a>
-						<a href="#" target="_blank" title="Twitter"><?php get_template_part('template-parts/icons/icon', 'twitter.svg'); ?></a>
+						<a href="https://www.youtube.com/user/officialgreggallman" target="_blank" title="YouTube"><?php get_template_part('template-parts/icons/icon', 'youtube.svg'); ?></a>
+						<a href="http://facebook.com/GreggAllman" target="_blank" title="Facebook"><?php get_template_part('template-parts/icons/icon', 'facebook.svg'); ?></a>
+						<a href="http://instagram.com/OfficialGreggAllman" target="_blank" title="Instagram"><?php get_template_part('template-parts/icons/icon', 'instagram.svg'); ?></a>
+						<a href="http://twitter.com/GreggAllman" target="_blank" title="Twitter"><?php get_template_part('template-parts/icons/icon', 'twitter.svg'); ?></a>
 					</div>
 				</div>
 			</div>

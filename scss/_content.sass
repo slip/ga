@@ -213,6 +213,7 @@
       .featured-image
         background: lighten($color-newsletter, 5%)
         background-image: url(img/GAnewstextureA.png)
+        height: 100%
 
     &:nth-of-type(4n+2)
       background: $color-nav-link
@@ -223,6 +224,7 @@
       .featured-image
         background: lighten($color-nav-link, 5%)
         background-image: url(img/GAnewstextureB.png)
+        height: 100%
 
     &:nth-of-type(4n+3)
       background: $color-button
@@ -233,6 +235,7 @@
       .featured-image
         background: lighten($color-button, 5%)
         background-image: url(img/GAnewstextureA.png)
+        height: 100%
 
     &:nth-of-type(4n+4)
       background: $color-link
@@ -243,6 +246,7 @@
       .featured-image
         background: lighten($color-link, 5%)
         background-image: url(img/GAnewstextureB.png)
+        height: 100%
 
   .card
     display: flex
@@ -712,3 +716,9 @@ h1.album
 .photo-credit
   color: white
   font-size: 12px
+  text-align: left
+  position: relative
+  // top: -30px
+  left: 20px
+  margin: 0
+  max-width: 200px
