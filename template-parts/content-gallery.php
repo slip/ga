@@ -31,12 +31,10 @@
         <a href="<?php echo $photo['url']; ?>" class="gallery">
           <img src="<?php echo $photo['sizes']['three-column-thumb']; ?>" alt="<?php echo $photo['alt']; ?>" />
         </a>
+        <?php if (!empty($photographer)): ?>
+            <div class="photo-credit">Photo by: <?php echo $photographer; ?></div>
+        <?php endif; ?>
       </div>
-      <?php if (!empty($photographer)): ?>
-        <div class="lower-text">
-          <div class="photo-credit">Photo by: <?php echo $photographer; ?></div>
-        </div>
-      <?php endif; ?>
   </div>
 
   <?php endwhile; ?>

@@ -1247,7 +1247,8 @@ object {
       .card-grid article:nth-of-type(4n+1) .featured-image,
       .card-grid .card-container:nth-of-type(4n+1) .featured-image {
         background: #879158;
-        background-image: url(img/GAnewstextureA.png); }
+        background-image: url(img/GAnewstextureA.png);
+        height: 100%; }
     .card-grid article:nth-of-type(4n+2),
     .card-grid .card-container:nth-of-type(4n+2) {
       background: #FFBA5C; }
@@ -1257,7 +1258,8 @@ object {
       .card-grid article:nth-of-type(4n+2) .featured-image,
       .card-grid .card-container:nth-of-type(4n+2) .featured-image {
         background: #ffc576;
-        background-image: url(img/GAnewstextureB.png); }
+        background-image: url(img/GAnewstextureB.png);
+        height: 100%; }
     .card-grid article:nth-of-type(4n+3),
     .card-grid .card-container:nth-of-type(4n+3) {
       background: #66877C; }
@@ -1267,7 +1269,8 @@ object {
       .card-grid article:nth-of-type(4n+3) .featured-image,
       .card-grid .card-container:nth-of-type(4n+3) .featured-image {
         background: #729489;
-        background-image: url(img/GAnewstextureA.png); }
+        background-image: url(img/GAnewstextureA.png);
+        height: 100%; }
     .card-grid article:nth-of-type(4n+4),
     .card-grid .card-container:nth-of-type(4n+4) {
       background: #F87439; }
@@ -1277,7 +1280,8 @@ object {
       .card-grid article:nth-of-type(4n+4) .featured-image,
       .card-grid .card-container:nth-of-type(4n+4) .featured-image {
         background: #f98552;
-        background-image: url(img/GAnewstextureB.png); }
+        background-image: url(img/GAnewstextureB.png);
+        height: 100%; }
   .card-grid .card {
     display: flex;
     flex-direction: column;
@@ -1673,7 +1677,12 @@ h1.album {
 
 .photo-credit {
   color: white;
-  font-size: 12px; }
+  font-size: 12px;
+  text-align: left;
+  position: relative;
+  left: 20px;
+  margin: 0;
+  max-width: 200px; }
 
 .widget-area .promo {
   text-align: center;
