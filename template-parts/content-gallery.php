@@ -10,64 +10,55 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="page-title hidden-text">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+  <header class="entry-header">
+  <?php the_title( '<h1 class="page-title hidden-text">', '</h1>' ); ?>
+  </header><!-- .entry-header -->
 
-	<div class="page-content">
-		<?php
-		if( have_rows('media') ): ?>
+  <div class="page-content">
+  <?php
+  if( have_rows('media') ): ?>
 
-			<div class="card-grid card-grid-three">
+  <div class="card-grid card-grid-three">
 
-			<?php while( have_rows('media') ): the_row();
+  <?php while( have_rows('media') ): the_row();
+  			$type = get_sub_field('media_type');
+  			$photo = get_sub_field('photo');
+        $photographer = get_sub_field('photographer');
+  ?>
 
-			$type = get_sub_field('media_type');
-			$photo = get_sub_field('photo');
-
-			?>
-				<div class="card-container">
-          <div class="featured-image">
-					<a href="<?php echo $photo['url']; ?>" data-featherlight="<?php echo $photo['url']; ?>" class="gallery">
-							<img src="<?php echo $photo['sizes']['three-column-thumb']; ?>" alt="<?php echo $photo['alt']; ?>" />
-					</a>
+  <div class="card-container">
+      <div class="featured-image">
+        <a href="<?php echo $photo['url']; ?>" class="gallery">
+          <img src="<?php echo $photo['sizes']['three-column-thumb']; ?>" alt="<?php echo $photo['alt']; ?>" />
+        </a>
+      </div>
+      <?php if (!empty($photographer)): ?>
+        <div class="lower-text">
+          <div class="photo-credit">Photo by: <?php echo $photographer; ?></div>
         </div>
+      <?php endif; ?>
+  </div>
 
-				</div>
+  <?php endwhile; ?>
+  </div><!-- card-grid -->
 
-			<?php endwhile; ?>
+  <?php
+    endif;
 
-			</div>
-
-		<?php
-		endif;
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'resolutionathens' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
+    wp_link_pages( array(
+    'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'resolutionathens' ),
+    'after'  => '</div>',
+    ) );
+  ?>
+  </div><!-- .entry-content -->
 
 </article><!-- #post-## -->
 <script>
-  jQuery(document).ready(function(){
+  jQuery(document).ready(function() {
     jQuery('.gallery').featherlightGallery({
-      gallery: {
-        fadeIn: 300,
-        fadeOut: 300,
-        next: 'next »',
-        previous: '« previous'
-      },
-      openSpeed:    300,
-      closeSpeed:   300
-    });
-    jQuery('.gallery2').featherlightGallery({
-      gallery: {
-        next: 'next »',
-        previous: '« previous'
-      },
-      variant: 'featherlight-gallery2'
-    });
-  });
+      galleryFadeIn: 1000,
+      galleryFadeOut: 1000,
+      openSPeed: 1000
+    })
+  })
 </script>
