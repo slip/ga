@@ -343,7 +343,7 @@ embed, iframe, object { max-width: 100%; }
 
 .hp-hero { background-image: url("img/hp-hero.png"); background-repeat: no-repeat; background-attachment: scroll; background-position: center center; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 
-.hp-newsletter { background: #354641; background-image: url("img/tile-wood-115h.png"); background-blend-mode: multiply; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; position: absolute; bottom: 0; left: 0; right: 0; z-index: 100; }
+.hp-newsletter { background: #354641; background-image: url("img/wood-tile-dark.png"); -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; position: absolute; bottom: 0; left: 0; right: 0; z-index: 100; }
 .hp-newsletter .wrapper { float: right; max-width: 747px; padding: 1.5em 1.5em 1em; }
 .hp-newsletter form { padding: 0 0.5em 1em; float: left; }
 .hp-newsletter .social-icons { float: left; }
@@ -357,7 +357,7 @@ embed, iframe, object { max-width: 100%; }
 .home .col-two-third { -moz-order: 1; -ms-order: 1; -o-order: 1; -webkit-order: 1; order: 1; }
 
 .hp-recent-news { padding-right: 1.5em; }
-.hp-recent-news .news-header { font-family: "Merriweather", serif; font-size: 30px; font-size: 1.875rem; background: #6D9B8D; color: #FDF1D8; padding: 0.25em 0.5em; background-image: url(img/tile-wood-115h.png); background-blend-mode: multiply; }
+.hp-recent-news .news-header { font-family: "Merriweather", serif; font-size: 30px; font-size: 1.875rem; background: #6D9B8D; color: #FDF1D8; padding: 0.25em 0.5em; background-image: url(img/wood-tile-light.png); }
 .hp-recent-news .news { padding: 0.8em 1em; position: relative; min-height: 150px; }
 .hp-recent-news .news:nth-of-type(odd) { background: #8bb0a5; background-image: url(img/GAnewstextureA.png); }
 .hp-recent-news .news:nth-of-type(even) { background: #FDF1D8; background-image: url(img/GAnewstextureB.png); }
@@ -436,7 +436,7 @@ h1.album { color: #F87439; font-family: "Merriweather", serif; font-weight: 400;
 .purchase-links a:hover .type-text, .purchase-links a:hover .type-description, .purchase-links a:active .type-text, .purchase-links a:active .type-description, .purchase-links a:focus .type-text, .purchase-links a:focus .type-description { color: #686C58; }
 .purchase-links a:hover .purchase-link-icon, .purchase-links a:active .purchase-link-icon, .purchase-links a:focus .purchase-link-icon { fill: #686C58; }
 
-.tracklist-header { font-size: 30px; font-size: 1.875rem; font-family: "Merriweather", serif; background-color: #6D9B8D; color: #FDF1D8; background-image: url(img/tile-wood-115h.png); background-blend-mode: multiply; margin: 1.5em 0 0; padding: 0.5em 1em; }
+.tracklist-header { font-size: 30px; font-size: 1.875rem; font-family: "Merriweather", serif; background-color: #6D9B8D; color: #FDF1D8; background-image: url(img/wood-tile-light.png); margin: 1.5em 0 0; padding: 0.5em 1em; }
 
 .tracklist { list-style: none; margin: 0 0 1.5em; padding-left: 0; }
 .tracklist audio { max-width: 100%; }
@@ -500,7 +500,7 @@ h1.album { color: #F87439; font-family: "Merriweather", serif; font-weight: 400;
 .widget-area .promo:nth-of-type(2n+2) { background-color: #6D9B8D; }
 
 .widget { margin: 0 auto 1.5em; display: flex; flex-direction: column; height: 100%; }
-.widget .tour-header { font-size: 30px; font-size: 1.875rem; background: #43312A; color: #FDF1D8; background-image: url(img/tile-wood-115h.png); background-blend-mode: multiply; font-family: "Merriweather", serif; padding: 0.25em 0.5em; }
+.widget .tour-header { font-size: 30px; font-size: 1.875rem; background: #43312A; color: #FDF1D8; background-image: url(img/wood-tile-brown.png); font-family: "Merriweather", serif; padding: 0.25em 0.5em; }
 .widget .tour-date { border-right: 1px solid #43312A; border-bottom: 1px solid #43312A; flex-grow: 1; }
 .widget .tour-date .date { padding: 1em 0; width: 50px; }
 .widget .tour-date .month { font-size: 15px; font-size: 0.9375rem; line-height: 1; }
@@ -554,7 +554,7 @@ h1.album { color: #F87439; font-family: "Merriweather", serif; font-weight: 400;
 @media only screen and (max-width: 1024px) { .featherlight-next, .featherlight-previous { top: 10px; right: 10px; left: 85%; }
   .featherlight-previous { left: 10px; right: 85%; }
   .featherlight-next span, .featherlight-previous span { margin-top: -30px; font-size: 40px; } }
-.site-footer { background-color: #354641; color: #E8E2D6; background-image: url(img/tile-wood-115h.png); background-blend-mode: multiply; }
+.site-footer { background-color: #354641; color: #E8E2D6; background-image: url(img/wood-tile-dark.png); }
 .site-footer .row { align-items: center; }
 
 .legal { font-size: 12px; font-size: 0.75rem; font-family: "Merriweather", serif; float: left; max-width: 322px; }
