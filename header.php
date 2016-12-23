@@ -9,7 +9,16 @@
  * @package Resolution_Athens
  */
 
-?><!DOCTYPE html>
+?>
+<!--
+                  handmade by
+                  resolution
+    .-. .-. .-. .-. .   . . .-. .-. .-. . .
+    |(  |-  `-. | | |   | |  |   |  | | |\|
+    ' ' `-' `-' `-' `-' `-'  '  `-' `-' ' `
+              resolution.agency
+-->
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
