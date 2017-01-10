@@ -74,10 +74,12 @@
 				endif;
 				?>
 			</div><!-- .site-branding -->
+
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle closed" aria-controls="primary-menu" aria-expanded="false"><span id="line-1"></span><span id="line-2"></span><span id="line-3"></span><span id="line-4"></span><div><?php esc_html_e( 'Menu', 'resolutionathens' ); ?></div></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'primary-menu-ul closed' , 'container' => '' ) ); ?>
 			</nav><!-- #site-navigation -->
+
 		</div>
 	</header><!-- #masthead -->
 
