@@ -32,6 +32,7 @@
 			$type = get_sub_field('type');
 			$description = get_sub_field('type_description');
 			$link = get_sub_field('link');
+      $track_num = 0;
 			?>
 
 			<li><a href="<?php echo $link; ?>">
@@ -85,16 +86,33 @@
 		<?php while(have_rows('track_list')): the_row();
       $track_title = get_sub_field('track_name');
       $track_url = get_sub_field('preview_track');
+      $track_prefix = "track_";
       ?>
+      <style>
+        .play-btn{
+          content:url("<?php echo $play_btn_url ?>");
+        }
+        .pause-btn{
+          content:url("<?php echo $pause_btn_url ?>");
+        }
+      </style>
 			<li><?php echo $track_title; ?>
+        <?php
+          $track_num++;
+          $track_id = ($track_prefix . $track_num);
+          $play_btn_url = get_template_directory_uri() . '/img/play-btn.svg';
+          $pause_btn_url = get_template_directory_uri() . '/img/pause-btn.svg';
+        ?>
         <?php if (!empty($track_url)): ?>
           <div class="preview-track">
-            <audio controls>
+            <audio id="<?php echo $track_id ?>">
               <source src="<?php echo $track_url; ?>" type="audio/mpeg">
             </audio>
+            <img src="<?php echo $play_btn_url ?>" alt="play track" onclick="document.getElementById('<?php echo $track_id ?>').play()"/>
+            <img src="<?php echo $pause_btn_url ?>" alt="pause track" onclick="document.getElementById('<?php echo $track_id ?>').pause()"/>
           </div>
-      </li>
         <?php endif; ?>
+      </li>
 		<?php endwhile; ?>
 		</ul>
 	<?php endif;
@@ -111,7 +129,6 @@
 		) );
 	?>
 	</div><!-- .entry-content -->
-
 	<?php else: ?>
 	<a href="<?php the_permalink(); ?>" class="card" rel="bookmark">
 		<div class="featured-image">
